@@ -11,7 +11,7 @@ export default function HomePage() {
       className={`bg-gray-100 h-screen rounded-l-[30px] p-4 shadow-gray-950 shadow-3xl`}
       style={{
         marginLeft: isSidebarOpen ? '200px' : '68px', // Ensure content respects the sidebar's width
-        transition: 'margin-left  transition-width duration-500', // Smooth animation
+        transition: 'margin-left 0.5s ease-in-out', // Smooth animation
       }}
     >
       <div className="p-4">
