@@ -1,38 +1,17 @@
 'use client';
-import React, { useState } from 'react';
-import AccordionSubmenu from './AccordionSubmenu';
 
-const SidebarItem = ({ icon, label, isSidebarOpen, submenu }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleSubmenu = (e) => {
-    e.stopPropagation(); // Prevent event bubbling to the sidebar
-    setIsOpen(!isOpen);
-  };
-
+const SidebarItem = ({ icon, label, isSidebarOpen }) => {
   return (
-    <li className="relative group">
-      {/* Main Menu Item */}
-      <div
-        className={`flex items-center ${
-          isSidebarOpen ? 'justify-start' : 'justify-center'
-        } p-4 hover:bg-gray-800 cursor-pointer`}
-        onClick={submenu ? toggleSubmenu : undefined}
+    <li className="flex items-center p-2">
+      <span className="ml-2 p-2">{icon}</span>
+      <span
+        className={`ml-2 text-sm font-medium transition-opacity duration-00 ease-in-out ${
+          isSidebarOpen ? 'opacity-100' : 'opacity-0'
+        }`}
+        style={{ visibility: isSidebarOpen ? 'visible' : 'hidden' }}
       >
-        {icon}
-        {isSidebarOpen && (
-          <span className="ml-4 uppercase text-sm font-medium">{label}</span>
-        )}
-      </div>
-
-      {/* Submenu Items */}
-      {submenu && (
-        <AccordionSubmenu
-          isOpen={isOpen}
-          items={submenu}
-          isSidebarOpen={isSidebarOpen}
-        />
-      )}
+        {label}
+      </span>
     </li>
   );
 };

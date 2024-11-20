@@ -1,3 +1,5 @@
+//APP/PAGE.JS
+
 'use client';
 
 import { useContext } from 'react';
@@ -14,9 +16,14 @@ export default function HomePage() {
         transition: 'margin-left 0.5s ease-in-out', // Smooth animation
       }}
     >
-      <div className="p-4">
+      <div className="p-4 ">
         <h1 className="text-2xl font-bold">Welcome to My App</h1>
         <p>This is your main content area. It will adjust dynamically!</p>
+        <div className="flex flex-col md:flex-row gap-4 justify-between mt-10">
+          <div className="h-64 bg-slate-50 w-full rounded-2xl drop-shadow-2xl"></div>
+          <div className="h-64 bg-slate-50 w-full rounded-2xl drop-shadow-2xl"></div>
+          <div className="h-64 bg-slate-50 w-full rounded-2xl drop-shadow-2xl"></div>
+        </div>
       </div>
     </div>
   );
