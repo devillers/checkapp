@@ -1,3 +1,6 @@
+//APP/COMPONENTS/SIDEBARITEM
+
+
 'use client';
 
 const SidebarItem = ({ icon, label, isSidebarOpen }) => {

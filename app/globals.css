@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './fonts/fonts.css';
+
+.no-scroll {
+    overflow: hidden; /* Disables scrolling */
+    height: 100%; /* Locks height */
+  }

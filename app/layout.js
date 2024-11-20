@@ -1,6 +1,7 @@
 //APP/LAYOUT.JS
 
 import './globals.css';
+
 import { SidebarProvider } from './context/SidebarContext';
 import Sidebar from './components/Sidebar';
 
@@ -12,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <body className="">
+      <body className="" style={{ fontFamily: 'Raleway, cursive' }}>
         <SidebarProvider>
           <div className="flex h-screen bg-[#636C78] ">
             {/* Sidebar: Fixed Width */}
