@@ -4,7 +4,6 @@
 
 import React, { useContext } from 'react';
 import { SidebarContext } from '../context/SidebarContext';
-//import SidebarItem from './SidebarItem';
 import { FaHome, FaFolder, FaCog, FaHeart } from 'react-icons/fa';
 
 const Sidebar = () => {
@@ -28,20 +27,20 @@ const Sidebar = () => {
   return (
     <aside
       onClick={toggleSidebar}
-      className={`fixed top-0 left-0 h-full text-white z-30 transition-width duration-500 ease-in-out `}
+      className={`fixed top-0 left-0 h-full z-30 transition-width duration-500 ease-in-out`}
       style={{
         width: isSidebarOpen ? '200px' : '68px', // Dynamic width
       }}
     >
       <div
-        className={`flex flex-col items-center py-6 transition-opacity duration-1000  ${
+        className={`flex flex-col items-center py-6 transition-opacity duration-1000 ${
           isSidebarOpen ? 'opacity-100' : 'opacity-0'
         }`}
         style={{
           visibility: isSidebarOpen ? 'visible' : 'hidden', // Hide when closed
         }}
       >
-        <div className="rounded-full bg-gray-600 w-16 h-16 mb-2 flex items-center justify-center ">
+        <div className="rounded-full bg-gray-800 w-16 h-16 mb-2 flex items-center justify-center ">
           <img
             src="https://via.placeholder.com/150"
             alt="Profile"
@@ -50,7 +49,7 @@ const Sidebar = () => {
         </div>
         {isSidebarOpen && (
           <h3
-            className="text-center text-[24px] tracking-wide text-white mt-4"
+            className="text-center text-[24px] tracking-wide mt-4"
             style={{ fontFamily: 'Lobster Two, cursive' }}
           >
             la chandelle
@@ -65,11 +64,11 @@ const Sidebar = () => {
               <div className="flex items-center">
                 <span className="p-2">{item.icon}</span>
                 <span
-                  className={`ml-3 transition-opacity duration-500 text-[12px] uppercase tracking-wide ${
+                  className={`ml-3 transition-opacity duration-500 delay-200 text-[12px] uppercase tracking-wide ${
                     isSidebarOpen ? 'opacity-100' : 'opacity-0'
                   }`}
                   style={{
-                    visibility: isSidebarOpen ? 'visible' : 'hidden', // Smoothly hide labels
+                    visibility: isSidebarOpen ? 'visible' : 'hidden',
                   }}
                 >
                   {item.label}
@@ -81,7 +80,7 @@ const Sidebar = () => {
                   {item.submenu.map((subitem, subindex) => (
                     <li
                       key={subindex}
-                      className="flex items-center space-x-2 text-[12px] text-gray-100"
+                      className="flex items-center space-x-2 text-[12px]"
                     >
                       <div
                         className={`w-2 h-2 rounded-full ${subitem.color}`}

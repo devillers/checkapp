@@ -23,27 +23,51 @@ export default function HomePage() {
 
   return (
     <div
-      className={`bg-gray-100 min-h-screen rounded-l-[30px] p-4 shadow-gray-950 shadow-right-to-left`}
+      className={`bg-gray-100 min-h-screen rounded-l-[30px] p-4 shadow-gray-900 shadow-right-to-left`}
       style={{
         marginLeft: isSidebarOpen ? '200px' : '68px', // Ensure content respects the sidebar's width
         transition: 'margin-left 0.5s ease-in-out', // Smooth animation
       }}
     >
       <div className="p-4 flex flex-col h-full">
-        <h1
-          className="text-2xl font-bold "
-          style={{ fontFamily: 'Raleway, cursive' }}
-        >
-          my inventory
-        </h1>
-        <div className="flex justify-end">
-          <div className="flex flex-row justify-around w-52">
-            <p className="rounded-full border-[1px] border-red-500 min-w-20 text-center text-red-500  tracking-wide text-[12px] py-1 px-2">
-              login
-            </p>
-            <p className="rounded-full border-[1px] border-green-500 min-w-20 text-center text-green-500  tracking-wide text-[12px] py-1 px-2">
-              signup
-            </p>
+        <div className="flex flex-row justify-between">
+          <div className="flex flex-row space-x-6 items-center">
+            <h1
+              className="text-2xl font-bold "
+              style={{ fontFamily: 'Raleway, cursive' }}
+            >
+              my inventory
+            </h1>
+
+            <div className="relative">
+              <p className="text-[11px] rounded-full px-2 py-1 border-gray-500 border-[1px]  bg-white text-gray-500  ">
+                {' '}
+                active link
+              </p>
+              <p className="absolute full rounded-full h-4 w-4 -top-2 -right-1 bg-red-500 text-white text-[10px] flex justify-center items-center">
+                1
+              </p>
+            </div>
+
+            <div className="relative">
+              <p className="text-[11px] rounded-full px-2 py-1 border-gray-500 border-[1px]  bg-white text-gray-500  ">
+                {' '}
+                search
+              </p>
+            </div>
+
+            <div className="relative">
+              <p className="text-[11px] rounded-full px-2 py-1 border-red-500 border-[1px]  bg-white text-red-500  ">
+                {' '}
+                log out
+              </p>
+            </div>
+            <div className="relative">
+              <p className="text-[11px] rounded-full px-2 py-1 border-green-500 border-[1px]  bg-white text-green-500  ">
+                {' '}
+                signup
+              </p>
+            </div>
           </div>
         </div>
 

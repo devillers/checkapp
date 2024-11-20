@@ -13,9 +13,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <body className="" style={{ fontFamily: 'Raleway, cursive' }}>
+      <body
+        className="text-gray-800"
+        style={{ fontFamily: 'Raleway, cursive' }}
+      >
         <SidebarProvider>
-          <div className="flex h-screen bg-[#636C78] ">
+          <div className="flex h-screen bg-[#d9dadd] ">
             {/* Sidebar: Fixed Width */}
             <Sidebar />
             {/* Main Content */}
@@ -23,6 +26,7 @@ export default function RootLayout({ children }) {
           </div>
         </SidebarProvider>
       </body>
+     
     </html>
   );
 }
