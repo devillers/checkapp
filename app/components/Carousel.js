@@ -66,7 +66,7 @@ const Carousel = ({ slides }) => {
 
       {/* Slide Container */}
       <div
-        className="flex transition-transform duration-500 ease-in-out"
+        className="flex transition-transform duration-500 ease-in-out drop-shadow-md"
         style={{
           transform: `translateX(-${currentIndex * (100 / slidesPerView)}%)`,
         }}
@@ -86,10 +86,10 @@ const Carousel = ({ slides }) => {
                 className="w-full max-h-[150px] object-cover rounded-t-lg mb-1"
               />
               <div className="p-2 flex flex-wrap gap-1">
-                <h3 className="text-[9px] rounded-full px-1 border-orange-500 border-[1px] bg-white text-orange-500">
+                <h3 className="text-[11px] rounded-full px-2 border-orange-500 border-[1px] bg-white text-orange-500">
                   {slide.category}
                 </h3>
-                <h4 className="text-[9px] rounded-full px-1 border-purple-500 border-[1px] bg-white text-purple-500">
+                <h4 className="text-[11px] rounded-full px-2 border-purple-500 border-[1px] bg-white text-purple-500">
                   {slide.name}
                 </h4>
               </div>
@@ -98,7 +98,7 @@ const Carousel = ({ slides }) => {
                 <div className=" flex justify-end ">
                   <button
                     onClick={() => console.log('Edit slide:', slide)}
-                    className="my-2 tracking-wide  text-[9px] rounded-full px-1 border-gray-500 border-[1px] bg-white text-gray-500"
+                    className="my-2  text-[11px] rounded-full px-2 border-gray-500 border-[1px] bg-white text-gray-500"
                   >
                     editer
                   </button>
