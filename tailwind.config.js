@@ -16,5 +16,11 @@ module.exports = {
       'right-to-left': '10px 0px 20px -5px rgba(0, 0, 0, 0.9)', // Shadow flows left
     },
   },
+  // screens: {
+  //   sm: '640px',
+  //   md: '768px',
+  //   lg: '1024px',
+  //   xl: '1280px',
+  // },
   plugins: [],
 };

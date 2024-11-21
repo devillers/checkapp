@@ -5,6 +5,18 @@
 @import './fonts/fonts.css';
 
 .no-scroll {
-    overflow: hidden; /* Disables scrolling */
-    height: 100%; /* Locks height */
-  }
+  overflow: hidden; /* Disables scrolling */
+  height: 100%; /* Locks height */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #4b5563; /* Tailwind Slate-700 */
+}
+
+.swiper-pagination-bullet {
+  background: #d1d5db; /* Tailwind Slate-300 */
+}
+.swiper-pagination-bullet-active {
+  background: #4b5563; /* Tailwind Slate-700 */
+}

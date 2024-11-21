@@ -1,0 +1,44 @@
+[
+  {
+    "category": "salon",
+    "name": "chaise",
+    "picture": "./images/CR-1.jpg",
+    "description": "bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker",
+    "id": 1
+  },
+  {
+    "category": "salon",
+    "name": "chaise",
+    "picture": "./images/CR-1.jpg",
+    "description": "bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker",
+    "id": 2
+  },
+  {
+    "category": "salon",
+    "name": "chaise",
+    "picture": "./images/CR-1.jpg",
+    "description": "bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker",
+    "id": 3
+  },
+  {
+    "category": "salon",
+    "name": "chaise",
+    "picture": "./images/CR-1.jpg",
+    "description": "bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker",
+    "id": 4
+  },
+  {
+    "category": "salon",
+    "name": "chaise",
+    "picture": "./images/CR-1.jpg",
+    "description": "bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker",
+    "id": 4
+  },
+  {
+    "category": "salon",
+    "name": "chaise",
+    "picture": "./images/CR-1.jpg",
+    "description": "bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker",
+    "id": 4
+  }
+]
