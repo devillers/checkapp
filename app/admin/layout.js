@@ -38,6 +38,7 @@ export default function AdminLayout({ children }) {
       >
         {React.cloneElement(children, { isSidebarOpen })}
       </main>
+      dede
     </div>
   );
 }
